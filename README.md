@@ -71,8 +71,4 @@ error: did you mean `--delete` (with two dashes)?
 gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git push origin --delete test
 To https://github.com/Preacher-Y/Gym-Git-Exercise-Solutions
  - [deleted]         test
-
-gymintore@Intores-iMac Gym-Git-Exercise-Solutions % 
-
-
 ```
