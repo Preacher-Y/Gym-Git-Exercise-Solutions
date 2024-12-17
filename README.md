@@ -1,1 +1,2 @@
-# Gym-Git-Exercise-Solutions
+# The Gym Git Exercise Solutions
+
