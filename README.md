@@ -72,3 +72,37 @@ gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git push origin --delete tes
 To https://github.com/Preacher-Y/Gym-Git-Exercise-Solutions
  - [deleted]         test
 ```
+
+### _Execises 2_
+```bash
+
+gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git pull
+Already up to date.
+
+gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git branch ft/service-redesign
+gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git branch
+  dev
+  ft/service-redesign
+* main
+
+gymintore@Intores-iMac Gym-Git-Exercise-Solutions % ls
+README.md	service.html
+
+gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git commit -a -m "few edits on services.html"
+[ft/service-redesign d920043] few edits on services.html
+ 1 file changed, 17 insertions(+)
+
+gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 591 bytes | 591.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Preacher-Y/Gym-Git-Exercise-Solutions
+   e18d0e7..d920043  ft/service-redesign -> ft/service-redesign
+
