@@ -75,5 +75,115 @@ To https://github.com/Preacher-Y/Gym-Git-Exercise-Solutions
 
 ### _Execises 2_
 ```bash
+gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git stash clear
 
+gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git pull
+Already up to date.
 
+gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git push origin
+Everything up-to-date
+
+gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        home.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git add home.html
+
+gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git stash
+Saved working directory and index state WIP on main: 521ab43 readme up date
+
+gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        about.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git add .
+
+gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git stash
+Saved working directory and index state WIP on main: 521ab43 readme up date
+
+gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        team.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git add . 
+
+gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   team.html
+
+gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git stash 
+Saved working directory and index state WIP on main: 521ab43 readme up date
+
+gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git stash list
+stash@{0}: WIP on main: 521ab43 readme up date
+stash@{1}: WIP on main: 521ab43 readme up date
+stash@{2}: WIP on main: 521ab43 readme up date
+
+gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git stash pop stash@{1}
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+
+Dropped stash@{1} (a3e54b9a27103a6307729bf1a0dd4c582d2145f7)
+
+gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git stash pop stash@{0}
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+        new file:   team.html
+
+Dropped stash@{0} (ff2f0e7382c07b8d72eed7a44a24ba0c35a22373)
+
+gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git commit -m - a "bombclat"
+error: pathspec 'a' did not match any file(s) known to git
+error: pathspec 'bombclat' did not match any file(s) known to git
+
+gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git commit -a -m "bombclat"
+[main 1148a92] bombclat
+ 2 files changed, 34 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 team.html
+
+gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git stash pop stash@{2}     
+fatal: log for 'stash' only has 1 entries
+
+gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git stash pop stash@{0}
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   home.html
+
+Dropped stash@{0} (55c9805f22e538a14265811830c3b3eda35f4a9d)
+gymintore@Intores-iMac Gym-Git-Exercise-Solutions % git reset 
+```
