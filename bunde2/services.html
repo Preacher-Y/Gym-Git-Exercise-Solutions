@@ -6,6 +6,12 @@
     <title>Bundle 2 </title>
 </head>
 <body style="display: grid; justify-content: center;">
-    <h1 style=" color: white; background-color:darkorange; padding: 20px; font-size: larger; font-weight: 600;border-radius: 16px; ">Hello I'm learning Git Advanced</h1>
+    <h1 id="ok" onclick="hello()" style=" color: white; background-color:darkorange; padding: 20px; font-size: larger; font-weight: 600;border-radius: 16px; width:386px ; text-align: center; ">Hello I'm learning Git Advanced</h1>
 </body>
+<script>
+    function hello () {
+        var ok = document.getElementById('ok');
+        ok.innerText='Wow! Its Amazing';
+    }
+</script>
 </html>
